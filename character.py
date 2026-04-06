@@ -33,7 +33,7 @@ class Hero(Character):
             print(f"{self.name} attacts with {self.weapon} for {damage}. ")
 
 
-        other.take.damage(damage)
+        other.take_damage(damage)
         print(f"{other.name} has {other.hp} HP left.")
 
         heal = random.randint(0, 3)
@@ -46,7 +46,7 @@ class Hero(Character):
 
 
 
-class Villian(Character):
+class Villain(Character):
     def __init__(self, name, weapon):
         super().__init__(name, weapon)
 
@@ -65,6 +65,6 @@ class Villian(Character):
         else:
             print(f"{self.name} attacts with {self.weapon} for {damage}. ")
 
-        other.take.damage(damage)
+        other.take_damage(damage)
         print(f"{other.name} has {other.hp} HP left.\n")
 
